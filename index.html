@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Recruitment Company | Jobs in Kalpetta</title>
+<meta name="description" content="Find job opportunities in Kalpetta and Wayanad. Recruitment services for job seekers and employers.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html">YOUR<span>RECRUITMENT</span></a>
+    <nav>
+      <a href="#jobs">Jobs</a><a href="#seekers">Job Seekers</a><a href="#employers">Employers</a><a href="#about">About</a><a class="nav-button" href="#contact">Contact</a>
+    </nav>
+    <button class="menu" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <p class="eyebrow">RECRUITMENT SERVICES • KALPETTA</p>
+   <h1>Connecting <span>Talent</span> With Opportunity.</h1>
+   <p class="hero-text">We connect job seekers with suitable employment opportunities and help employers find the right people for their teams.</p>
+   <div class="actions"><a class="button primary" href="#jobs">View Jobs</a><a class="button secondary" href="#employers">Hire With Us</a></div>
+   <p class="location">📍 Kalpetta, Wayanad, Kerala</p>
+  </div>
+  <div class="hero-card">
+   <div class="card-icon">👥</div><h2>Your next opportunity could be here.</h2>
+   <p>Explore current openings and take the next step in your career.</p>
+   <a href="#jobs">Explore opportunities →</a>
+  </div>
+ </div>
+</section>
+
+<section id="jobs" class="section">
+ <div class="container">
+  <div class="section-heading">
+   <div><p class="eyebrow">CURRENT OPENINGS</p><h2>Find your next job</h2></div>
+  </div>
+  <div class="job-tools">
+   <input id="jobSearch" type="search" placeholder="Search job title or location...">
+   <select id="jobType"><option value="all">All job types</option><option value="Full Time">Full Time</option><option value="Part Time">Part Time</option></select>
+  </div>
+  <div id="jobList" class="job-grid"></div>
+  <p id="noJobs" class="no-jobs" hidden>No matching jobs found.</p>
+ </div>
+</section>
+
+<section id="seekers" class="section light">
+ <div class="container two-column">
+  <div><p class="eyebrow">FOR JOB SEEKERS</p><h2>Looking for your next opportunity?</h2>
+  <p>Share your profile with us and we can help connect you with suitable job opportunities based on your skills and experience.</p>
+  <a class="button primary" href="#contact">Submit Your Resume</a></div>
+  <div class="steps">
+   <div><strong>01</strong><span>Share your details</span></div>
+   <div><strong>02</strong><span>Explore suitable openings</span></div>
+   <div><strong>03</strong><span>Attend the interview</span></div>
+   <div><strong>04</strong><span>Move towards your next opportunity</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="employers" class="section">
+ <div class="container employer">
+  <div><p class="eyebrow">FOR EMPLOYERS</p><h2>Need the right people for your business?</h2><p>Tell us about your hiring requirement and we'll help you identify candidates for your open positions.</p></div>
+  <a class="button primary" href="#contact">Submit Hiring Requirement</a>
+ </div>
+</section>
+
+<section id="about" class="section light">
+ <div class="container about">
+  <p class="eyebrow">ABOUT US</p><h2>Local recruitment with a focus on people.</h2>
+  <p>Your Recruitment Company is a recruitment service based in Kalpetta, connecting employers and job seekers across Wayanad and nearby areas. Our company story, team information and detailed services can be added once the business details are finalized.</p>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="container contact-box">
+  <div><p class="eyebrow">GET IN TOUCH</p><h2>Ready to take the next step?</h2><p>Contact us about a job opportunity or your recruitment requirement.</p></div>
+  <div class="contact-details">
+   <p>📞 <strong>Phone:</strong> +91 XXXXX XXXXX</p>
+   <p>✉️ <strong>Email:</strong> yourcompany@example.com</p>
+   <p>📍 <strong>Location:</strong> Kalpetta, Wayanad, Kerala</p>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="container footer-inner"><p>© 2026 Your Recruitment Company. All rights reserved.</p><p>Kalpetta • Wayanad • Kerala</p></div></footer>
+
+<div id="applyModal" class="modal" aria-hidden="true">
+ <div class="modal-box">
+  <button class="close" aria-label="Close">×</button>
+  <p class="eyebrow">JOB APPLICATION</p>
+  <h2 id="applyTitle">Apply for a job</h2>
+  <form id="applyForm">
+   <input id="candidateName" required placeholder="Full name">
+   <input id="candidatePhone" required type="tel" placeholder="Phone number">
+   <input id="candidateEmail" required type="email" placeholder="Email address">
+   <input id="candidateExperience" placeholder="Experience (e.g. 2 years)">
+   <textarea id="candidateMessage" rows="4" placeholder="Briefly tell us about yourself"></textarea>
+   <p class="form-note">For now this is a website demo. We can connect this form to Google Forms/email and add resume upload in the next step.</p>
+   <button class="button primary" type="submit">Submit Application</button>
+  </form>
+  <p id="formSuccess" class="success" hidden>Thank you. Your application details have been captured in this demo.</p>
+ </div>
+</div>
+
+<script src="jobs.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
